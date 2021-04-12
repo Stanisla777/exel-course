@@ -1,5 +1,41 @@
-$red: red;
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body{
-  background-color: $red;
+@import "header";
+@import "formula";
+@import "table";
+@import "toolbar";
+@import "dashboard";
+
+
+
+*{
+  margin: 0;
+  padding: 0;
 }
+body{
+  font-family: "Roboto",sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+}
+.excel{
+  &__header{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input{
+    input{
+      border: 1px solid transparent;
+      &:hover{
+        border: 1px solid #dedede
+      }
+    }
+  }
+  &__button{
+    display: flex;
+  }
+}
+
